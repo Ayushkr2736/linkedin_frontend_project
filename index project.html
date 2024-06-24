@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>social media website design</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+            <!-- --------------navbar-starts with profile-drop-down-menu----------------------- -->
+
+
+    <nav class="navbar">
+
+
+
+        <div class="navbar-left">
+
+            <a href="index.html" class="logo" ><img src="linkedinimg/images/logo.png" ></a>
+
+            <div class="search-box">
+                <img src="linkedinimg/images/search.png" >
+                <input type="text" placeholder="search">
+            </div>
+        </div>   
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="linkedinimg/images/home.png" ><span>home</span></a></li>
+                <li><a href="#"><img src="linkedinimg/images/network.png" ><span>my network</span></a></li>
+                <li><a href="#"><img src="linkedinimg/images/jobs.png" ><span>jobs</span></a></li>
+                <li><a href="#"><img src="linkedinimg/images/message.png" ><span>messaging</span></a></li>
+                <li><a href="#"><img src="linkedinimg/images/notification.png" ><span>notifications</span></a></li>
+            </ul>
+        </div>   
+        <div class="navbar-right">
+            <div class="online">
+                <img src="linkedinimg/images/user-1.png" class="nav-profile-img" onclick="togglemenu()">
+
+            </div>
+           
+        </div>  
+         <!-- ------------profile-drop-down-menu------------------------------------- -->
+          <div class="profile-menu-wrap" id="profilemenu">
+
+            <div class="profile-menu">
+
+                <div class="user-info">
+
+                    <img src="linkedinimg/images/user-1.png">
+                    <div>
+                        <h3>Rayan walton</h3>
+                        <a href="profile.html.html">see your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="linkedinimg/images/feedback.png">
+                    <p>Give feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="linkedinimg/images/setting.png">
+                    <p>setting and privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="linkedinimg/images/help.png">
+                    <p>Help and support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="linkedinimg/images/display.png">
+                    <p>Display and accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="linkedinimg/images/logout.png">
+                    <p>logout</p>
+                    <span>></span>
+                </a>
+            </div>
+          </div>
+        
+
+
+    </nav>
+
+    <!-- --------------navbar close------------------------->
+
+
+    <div class="container">
+        <!-- ---------------left-sidebar------------------- -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="linkedinimg/images/cover-pic.png" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="linkedinimg/images/user-1.png" >
+                    <h1>Rayan walton</h1>
+                    <h3>web developer at microsoft</h3>
+                    <ul>
+                        <li>Your profile views <span>52</span></li>
+                        <li>Your post views <span>810</span></li>
+                        <li>Your connections  <span>205</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="linkedinimg/images/items.png" >my items</a>
+                    <a href="#"><img src="linkedinimg/images/premium.png" >try premium</a>
+                </div>
+            </div>
+
+            <div class="sidebar-activity" id="sidebaractivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="linkedinimg/images/recent.png" >web devlopment</a>
+                <a href="#"><img src="linkedinimg/images/recent.png" >user interface</a>
+                <a href="#"><img src="linkedinimg/images/recent.png" >online learning</a>
+                <a href="#"><img src="linkedinimg/images/recent.png" >learn online</a>
+                <a href="#"><img src="linkedinimg/images/recent.png" >code better</a>
+                <a href="#"><img src="linkedinimg/images/recent.png" >group learning</a>
+
+                <h3>GROUPS</h3>
+                <a href="#"><img src="linkedinimg/images/group.png" >web design group</a>
+                <a href="#"><img src="linkedinimg/images/group.png" >Html and css learner</a>
+                <a href="#"><img src="linkedinimg/images/group.png" >Python and java script group</a>
+                <a href="#"><img src="linkedinimg/images/group.png" >learn coding  online</a>
+                
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="linkedinimg/images/hashtag.png" >webdevlopment</a>
+                <a href="#"><img src="linkedinimg/images/hashtag.png" >userinterface</a>
+                <a href="#"><img src="linkedinimg/images/hashtag.png" >onlinelearning</a>
+                <div class="discover-more-links">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+
+            <p id="showmorelink" onclick="toggleactivity()">show more <b>+</b></p>
+        
+       
+        </div>
+        <!-- ---------------------main-content--------------- -->
+        <div class="main-content">
+            
+
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="linkedinimg/images/user-1.png">
+                    <textarea rows="2" placeholder="write a post..." ></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="linkedinimg/images/photo.png" >photo</li>
+                    <li><img src="linkedinimg/images/video.png" >video</li>
+                    <li><img src="linkedinimg/images/event.png" >event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+
+            <div class="sort-by">
+                <hr>
+                <p>sort by: <span>top <img src="linkedinimg/images/down-arrow.png" ></span></p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="linkedinimg/images/user-3.png">
+                    <div>
+                        <h1>Benjamin leo</h1>
+                        <small>Founder and ceo at gallelio group | Angel invester</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>The success of every website depends on search engine optimisation and digital marketing strategy.if you are on first page of all major search engines then you are ahead among your competitors. </p>
+                <img src="linkedinimg/images/post-image-1.png" width="100%"> 
+                
+                <div class="post-stats">
+                    <div>
+                        <img src="linkedinimg/images/thumbsup.png ">
+                        <img src="linkedinimg/images/love.png ">
+                        <img src="linkedinimg/images/clap.png ">
+                        <span class="liked-user">Abhinav mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments&middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="linkedinimg/images/user-1.png" class="post-activity-user-icon">
+                        <img src="linkedinimg/images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="linkedinimg/images/like.png" >
+                        <span>like</span>
+                    </div>
+                    <div class="post-activity-link" >
+                        <img src="linkedinimg/images/comment.png" >
+                        <span>comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="linkedinimg/images/share.png" >
+                        <span>share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="linkedinimg/images/send.png" >
+                        <span>send</span>
+                    </div>
+                </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-author">
+                        <img src="linkedinimg/images/user-3.png">
+                        <div>
+                            <h1>Clarence george</h1>
+                            <small>Founder and ceo at gallelio group | Angel invester</small>
+                            <small>2 hours ago</small>
+                        </div>
+                    </div>
+                    <p>The success of every website depends on search engine optimisation and digital marketing strategy.if you are on first page of all major search engines then you are ahead among your competitors. </p>
+                    <img src="linkedinimg/images/post-image-2.png" width="100%"> 
+                    
+                    <div class="post-stats">
+                        <div>
+                            <img src="linkedinimg/images/thumbsup.png ">
+                            <img src="linkedinimg/images/love.png ">
+                            <img src="linkedinimg/images/clap.png ">
+                            <span class="liked-user">Abhinav mishra and 75 others</span>
+                        </div>
+                        <div>
+                            <span>22 comments&middot; 40 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-activity">
+                        <div>
+                            <img src="linkedinimg/images/user-1.png" class="post-activity-user-icon">
+                            <img src="linkedinimg/images/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="linkedinimg/images/like.png" >
+                            <span>like</span>
+                        </div>
+                        <div class="post-activity-link" >
+                            <img src="linkedinimg/images/comment.png" >
+                            <span>comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="linkedinimg/images/share.png" >
+                            <span>share</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="linkedinimg/images/send.png" >
+                            <span>send</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-author">
+                            <img src="linkedinimg/images/user-4.png">
+                            <div>
+                                <h1>Benjamin leo</h1>
+                                <small>Founder and ceo at gallelio group | Angel invester</small>
+                                <small>2 hours ago</small>
+                            </div>
+                        </div>
+                        <p>The success of every website depends on search engine optimisation and digital marketing strategy.if you are on first page of all major search engines then you are ahead among your competitors. </p>
+                        <img src="linkedinimg/images/post-image-3.png" width="100%"> 
+                        
+                        <div class="post-stats">
+                            <div>
+                                <img src="linkedinimg/images/thumbsup.png ">
+                                <img src="linkedinimg/images/love.png ">
+                                <img src="linkedinimg/images/clap.png ">
+                                <span class="liked-user">Abhinav mishra and 75 others</span>
+                            </div>
+                            <div>
+                                <span>22 comments&middot; 40 shares</span>
+                            </div>
+                        </div>
+                        <div class="post-activity">
+                            <div>
+                                <img src="linkedinimg/images/user-1.png" class="post-activity-user-icon">
+                                <img src="linkedinimg/images/down-arrow.png" class="post-activity-arrow-icon">
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="linkedinimg/images/like.png" >
+                                <span>like</span>
+                            </div>
+                            <div class="post-activity-link" >
+                                <img src="linkedinimg/images/comment.png" >
+                                <span>comment</span>
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="linkedinimg/images/share.png" >
+                                <span>share</span>
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="linkedinimg/images/send.png" >
+                                <span>send</span>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="post">
+                            <div class="post-author">
+                                <img src="linkedinimg/images/user-5.png">
+                                <div>
+                                    <h1>Benjamin leo</h1>
+                                    <small>Founder and ceo at gallelio group | Angel invester</small>
+                                    <small>2 hours ago</small>
+                                </div>
+                            </div>
+                            <p>The success of every website depends on search engine optimisation and digital marketing strategy.if you are on first page of all major search engines then you are ahead among your competitors. </p>
+                            <img src="linkedinimg/images/post-image-4.png" width="100%"> 
+                            
+                            <div class="post-stats">
+                                <div>
+                                    <img src="linkedinimg/images/thumbsup.png ">
+                                    <img src="linkedinimg/images/love.png ">
+                                    <img src="linkedinimg/images/clap.png ">
+                                    <span class="liked-user">Abhinav mishra and 75 others</span>
+                                </div>
+                                <div>
+                                    <span>22 comments&middot; 40 shares</span>
+                                </div>
+                            </div>
+                            <div class="post-activity">
+                                <div>
+                                    <img src="linkedinimg/images/user-1.png" class="post-activity-user-icon">
+                                    <img src="linkedinimg/images/down-arrow.png" class="post-activity-arrow-icon">
+                                </div>
+                                <div class="post-activity-link">
+                                    <img src="linkedinimg/images/like.png" >
+                                    <span>like</span>
+                                </div>
+                                <div class="post-activity-link" >
+                                    <img src="linkedinimg/images/comment.png" >
+                                    <span>comment</span>
+                                </div>
+                                <div class="post-activity-link">
+                                    <img src="linkedinimg/images/share.png" >
+                                    <span>share</span>
+                                </div>
+                                <div class="post-activity-link">
+                                    <img src="linkedinimg/images/send.png" >
+                                    <span>send</span>
+                                </div>
+                            </div>
+                            </div>
+            
+        
+    
+    
+
+
+        </div> 
+        <!-- --------------------right-sidebar---------------------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="linkedinimg/images/more.png" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#">High demand forr skilled manpower</a>
+                <span>1d ago &middot; 10,934 readers</span>
+
+                <a href="#">careers growing horizontaly too</a>
+                <span>19h ago &middot; 1,552 readers</span>
+
+                <a href="#">less work visa for us ,more  for uk</a>
+                <span>1d ago &middot;27,290 readers</span>
+
+                <a href="#">more highering=higher confidence</a>
+                <span>18h ago &middot;8,208  readers</span>
+
+                <a href="#">gautam adani is the world richests</a>
+                <span>12h ago &middot;4,205  readers</span>
+
+                <a href="#" class="read-more-link">Read more</a>
+
+            </div>
+
+
+
+            <div class="sidebar-ad">
+                <small>Ad  &middot; &middot; &middot;</small>
+                <p>master the 5 principle of web design </p>
+                <div>
+                    <img src="linkedinimg/images/user-1.png" >
+                    <img src="linkedinimg/images/mi-logo.png" >
+
+                </div>
+                <b>Brand and demand in xiaomi</b>
+                <a href="#" class="ad-link">Learn more</a>
+
+               
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessbility</a>
+                <a href="#">Help center</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the app</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="linkedinimg/images/logo.png" >
+                    <p>Linkedup &#169; 2022. All right reserved</p>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!-- ------------------------java-script-work-------------------------- -->
+
+    <script>
+
+        let profilemenu = document.getElementById("profilemenu");
+
+        function togglemenu(){
+            profilemenu.classList.toggle("open-menu");
+        }
+
+
+    </script>
+
+    <script>
+
+        let sideactivity = document.getElementById("sidebaractivity");
+        let morelink = document.getElementById("showmorelink");
+
+        function toggleactivity(){
+            sideactivity.classList.toggle("open-activity")
+
+            if(sideactivity.classList.contains("open-activity")){
+                morelink.innerHTML = "show less <b> - </b>";
+            }
+            else{
+                morelink.innerHTML = "show more <b> + </b>";
+            }
+        }
+    </script>
+        
+    </body>
+</html>
